@@ -6,9 +6,10 @@ body{
 }
 
 div#interface{
-    width: 900px;
+    width: 1200px;
+    height: 1500px;
     background-color: white;
-    margin: -20px auto 0px auto;
+    margin: auto auto auto auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,5);
     padding: 10px;
 
@@ -16,8 +17,8 @@ div#interface{
 
 header#cabecalho img#icone{
 position: absolute;
-    left: 800px;
-    top: 70px;
+    left: 1080px;
+    top: 100px;
 }
 
 header#cabecalho {
@@ -26,7 +27,22 @@ header#cabecalho {
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
-header#cabecalho
+header#cabecalho h1{
+font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6) ;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0;
+    margin-top: 0;
+}
 
 p{
     text-align: justify;
@@ -69,8 +85,8 @@ figure.foto-legenda:hover figcaption{
 nav#menu{
     display: block;
     position: absolute;
-    top: -20px;
-    left: 300px;
+    top: 0px;
+    left: 450px;
 }
 
 nav#menu ul {
@@ -104,4 +120,27 @@ nav#menu a {
 nav#menu a:hover {
     color: white;
     text-decoration: underline;
+}
+
+section#corpo{
+    display: block;
+    width: 600px;
+    float: left;
+    margin-right: 50px ;
+    border-right: 1px solid #dddddd;
+    padding-right: 15px;
+}
+section#lateral{
+    display: block;
+    width: 400px;
+    float: right;
+    clear: left;
+}
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #dddddd;
+    }
+
+footer#rodape p {
+    text-align: center;
 }
