@@ -2,12 +2,14 @@
 
 body{
     background-color: #dddddd;
+    font-family: Arial,sans-serif;
+    color: rgba(0,0,0,1);
 
 }
 
 div#interface{
     width: 1200px;
-    height: 1500px;
+    height: 1700px;
     background-color: white;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,5);
@@ -28,7 +30,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1{
-font-family: Arial, sans-serif;
+font-family: Didot, sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6) ;
@@ -37,16 +39,53 @@ font-family: Arial, sans-serif;
 }
 
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: Didot, sans-serif;
     font-size: 15pt;
     color: #888888;
     padding: 0;
     margin-top: 0;
 }
 
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 p{
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabeçalho-artigo h1{
+    font-family: Didot,sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita{
+
+    text-align: right;
+}
+
+header#cabeçalho-artigo h2{
+
+    font-size: 13pt;
+    color: #cecece;
+    background-color: white;
+    margin: 0px;
+}
+
+header#cabeçalho-artigo h3{
+
+    font-size: 12px;
+    color: #606060 ;
+    background-color: white;
 }
 
 /* formatação de imagens com legenda */
@@ -122,20 +161,86 @@ nav#menu a:hover {
     text-decoration: underline;
 }
 
+/* formatação tabela */
+
+table#tabela{
+
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela td{
+
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabela td.cd{
+
+    background-color: #cecece;
+}
+
+table#tabela td.ce{
+
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabela caption {
+
+    color: #888888;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+table#tabela caption span{
+
+   display: block;
+    float: right;
+    color: #000000;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* formatação de section, aside, article e footer */
+
 section#corpo{
     display: block;
-    width: 600px;
+    width: 620px;
     float: left;
-    margin-right: 50px ;
     border-right: 1px solid #dddddd;
-    padding-right: 15px;
+    padding-right: 10px;
 }
-section#lateral{
+aside#lateral{
     display: block;
-    width: 400px;
+    width: 530px;
     float: right;
-    clear: left;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
+
+aside#lateral h1{
+
+    font-family: Didot, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+
+}
+
+aside#lateral h2{
+
+background-color: #606060;
+    font-size: 15pt;
+    color: white;
+    padding: 10px;
+}
+
 footer#rodape{
     clear: both;
     border-top: 1px solid #dddddd;
@@ -143,4 +248,13 @@ footer#rodape{
 
 footer#rodape p {
     text-align: center;
+}
+
+article#noticia h2{
+
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
 }
